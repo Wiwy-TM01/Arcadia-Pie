@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4386DE9C24DB369A00AF4679 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4386DE9B24DB369A00AF4679 /* AppDelegate.swift */; };
 		4386DE9E24DB369A00AF4679 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4386DE9D24DB369A00AF4679 /* SceneDelegate.swift */; };
-		4386DEA024DB369A00AF4679 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4386DE9F24DB369A00AF4679 /* ViewController.swift */; };
+		4386DEA024DB369A00AF4679 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4386DE9F24DB369A00AF4679 /* MainViewController.swift */; };
 		4386DEA324DB369A00AF4679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4386DEA124DB369A00AF4679 /* Main.storyboard */; };
 		4386DEA524DB369B00AF4679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4386DEA424DB369B00AF4679 /* Assets.xcassets */; };
 		4386DEA824DB369B00AF4679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4386DEA624DB369B00AF4679 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		4386DE9824DB369A00AF4679 /* Arcadia Pie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arcadia Pie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4386DE9B24DB369A00AF4679 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4386DE9D24DB369A00AF4679 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4386DE9F24DB369A00AF4679 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4386DE9F24DB369A00AF4679 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4386DEA224DB369A00AF4679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4386DEA424DB369B00AF4679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4386DEA724DB369B00AF4679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,47 @@
 		4386DE9A24DB369A00AF4679 /* Arcadia Pie */ = {
 			isa = PBXGroup;
 			children = (
-				4386DE9B24DB369A00AF4679 /* AppDelegate.swift */,
+				43CBC5DA24DCA58500F9C454 /* Assets */,
+				43CBC5D824DCA52F00F9C454 /* Startup */,
+				43CBC5D924DCA56000F9C454 /* Main */,
+				43CBC5DB24DCA8B400F9C454 /* Models */,
 				4386DE9D24DB369A00AF4679 /* SceneDelegate.swift */,
-				4386DE9F24DB369A00AF4679 /* ViewController.swift */,
-				4386DEA124DB369A00AF4679 /* Main.storyboard */,
-				4386DEA424DB369B00AF4679 /* Assets.xcassets */,
-				4386DEA624DB369B00AF4679 /* LaunchScreen.storyboard */,
 				4386DEA924DB369B00AF4679 /* Info.plist */,
 			);
 			path = "Arcadia Pie";
+			sourceTree = "<group>";
+		};
+		43CBC5D824DCA52F00F9C454 /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				4386DEA624DB369B00AF4679 /* LaunchScreen.storyboard */,
+				4386DE9B24DB369A00AF4679 /* AppDelegate.swift */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		43CBC5D924DCA56000F9C454 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4386DEA124DB369A00AF4679 /* Main.storyboard */,
+				4386DE9F24DB369A00AF4679 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		43CBC5DA24DCA58500F9C454 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4386DEA424DB369B00AF4679 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		43CBC5DB24DCA8B400F9C454 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +109,7 @@
 				4386DE9424DB369A00AF4679 /* Sources */,
 				4386DE9524DB369A00AF4679 /* Frameworks */,
 				4386DE9624DB369A00AF4679 /* Resources */,
+				43CBC5DC24DCB0D300F9C454 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -133,12 +166,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		43CBC5DC24DCB0D300F9C454 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4386DE9424DB369A00AF4679 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4386DEA024DB369A00AF4679 /* ViewController.swift in Sources */,
+				4386DEA024DB369A00AF4679 /* MainViewController.swift in Sources */,
 				4386DE9C24DB369A00AF4679 /* AppDelegate.swift in Sources */,
 				4386DE9E24DB369A00AF4679 /* SceneDelegate.swift in Sources */,
 			);
