@@ -1,6 +1,5 @@
 ## General
 .DS_Store
-.swiftlint.yml
 .AppleDouble
 .LSOverride
 
@@ -9,6 +8,7 @@ xcuserdata/
 
 ## Thumbnails
 ._*
+*.yml
 
 ## Files that might appear in the root of a volume
 .TemporaryItems
