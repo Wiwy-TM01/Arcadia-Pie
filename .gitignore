@@ -1,6 +1,6 @@
 ## General
 .DS_Store
-.swiftylint.yml
+.swiftlint.yml
 .AppleDouble
 .LSOverride
 
