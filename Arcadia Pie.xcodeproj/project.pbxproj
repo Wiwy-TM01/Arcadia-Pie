@@ -60,7 +60,6 @@
 				43CBC5D824DCA52F00F9C454 /* Startup */,
 				43CBC5D924DCA56000F9C454 /* Main */,
 				43CBC5DB24DCA8B400F9C454 /* Models */,
-				4386DE9D24DB369A00AF4679 /* SceneDelegate.swift */,
 				4386DEA924DB369B00AF4679 /* Info.plist */,
 			);
 			path = "Arcadia Pie";
@@ -71,6 +70,7 @@
 			children = (
 				4386DEA624DB369B00AF4679 /* LaunchScreen.storyboard */,
 				4386DE9B24DB369A00AF4679 /* AppDelegate.swift */,
+				4386DE9D24DB369A00AF4679 /* SceneDelegate.swift */,
 			);
 			path = Startup;
 			sourceTree = "<group>";
