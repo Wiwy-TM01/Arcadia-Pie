@@ -1,5 +1,17 @@
-# ignore all logs
-*.log
+## General
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# ignore .DS_Store
-*.DS_Store
+## User settings
+xcuserdata/
+
+## Thumbnails
+._*
+*.yml
+
+## Files that might appear in the root of a volume
+.TemporaryItems
+.Trashes
+
+## Most of this is placeholder
