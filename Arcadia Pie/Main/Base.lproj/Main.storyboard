@@ -19,22 +19,38 @@
                                 <rect key="frame" x="0.0" y="10" width="375" height="44"/>
                                 <color key="barTintColor" red="0.2962311098" green="0.44840027570000002" blue="0.21084691229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </navigationBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Yro-S9-eDC">
+                                <rect key="frame" x="0.0" y="54" width="375" height="613"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jap-F2-ZX3">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.26907974541902657" green="0.52174680437045029" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="k3c-bZ-eSC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="RJQ-ku-cvu"/>
                             <constraint firstItem="k3c-bZ-eSC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VTY-4h-8mF"/>
                             <constraint firstItem="k3c-bZ-eSC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vcv-8a-sZu"/>
+                            <constraint firstItem="Yro-S9-eDC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cKB-sp-3yo"/>
+                            <constraint firstItem="Yro-S9-eDC" firstAttribute="top" secondItem="k3c-bZ-eSC" secondAttribute="bottom" id="dUD-ZV-Fan"/>
+                            <constraint firstItem="Yro-S9-eDC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hCD-Vl-Hq2"/>
+                            <constraint firstItem="Yro-S9-eDC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pXw-No-dc4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="Yro-S9-eDC" id="VrW-nM-vcG"/>
                         <outlet property="navigationBar" destination="k3c-bZ-eSC" id="gQd-VV-V56"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141" y="139"/>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
