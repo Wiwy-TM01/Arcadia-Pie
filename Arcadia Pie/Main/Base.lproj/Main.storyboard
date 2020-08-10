@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,25 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Arcadia_Pie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3c-bZ-eSC">
+                                <rect key="frame" x="0.0" y="10" width="375" height="44"/>
+                                <color key="barTintColor" red="0.2962311098" green="0.44840027570000002" blue="0.21084691229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26907974541902657" green="0.52174680437045029" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="k3c-bZ-eSC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="RJQ-ku-cvu"/>
+                            <constraint firstItem="k3c-bZ-eSC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VTY-4h-8mF"/>
+                            <constraint firstItem="k3c-bZ-eSC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vcv-8a-sZu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="navigationBar" destination="k3c-bZ-eSC" id="gQd-VV-V56"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
