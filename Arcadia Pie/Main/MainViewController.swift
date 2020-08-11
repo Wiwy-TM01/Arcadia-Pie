@@ -30,7 +30,7 @@ class MainViewController: UIViewController {
 extension MainViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -41,13 +41,28 @@ extension MainViewController: UICollectionViewDataSource {
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: constants.arcadiaCell, for: indexPath) as? ArcadiaCell else { return UICollectionViewCell() }
         
-        cell.titleLabel.text = "Test Test"
+        cell.titleLabel.text = "\(indexPath.section) : \(indexPath.row)"
         
         return cell
     }
 }
 
 // MARK: - Delegates
+
+extension MainViewController: UICollectionViewDelegateFlowLayout {
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+        // Insets handled in storyboard
+        
+        let screenSize = view.frame.size
+        let screenWidth = screenSize.width / 2
+        let screenHeight = screenSize.height / 2
+        let insetOffset: CGFloat = 2
+
+        return CGSize(width: screenWidth - insetOffset, height: screenHeight)
+    }
+}
 
 extension MainViewController: UICollectionViewDelegate {
     
