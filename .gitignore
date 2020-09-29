@@ -1,17 +1,55 @@
-## General
+##
+## Arcadia-Pie
+## Created By : Wiwy August 10, 2020
+##
+
+##
+# Xcode temporary files that should never be committed
+
+# Slash on the end, so we only remove the FOLDER, not any
+# files that were badly named "DerivedData" / "build" etc.
+
+DerivedData/
+build/
+project.xcworkspace/
+xcuserdata/
+
+*~.nib
+
+##
+# Xcode private settings (window sizes, bookmarks, breakpoints, custom executables, smart groups)
+
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+
+# Whitelist the default ones, some projects use these
+
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+
+##
+# OS X temporary files that should never be committed
+
 .DS_Store
 .AppleDouble
 .LSOverride
-
-## User settings
-xcuserdata/
-
-## Thumbnails
-._*
-*.yml
-
-## Files that might appear in the root of a volume
 .TemporaryItems
 .Trashes
 
-## Most of this is placeholder
+*.swp
+
+##
+# SwiftLint, Pods insulation
+
+*.yml
+*.lock
+
+##
+# Thumbnails
+._*
+

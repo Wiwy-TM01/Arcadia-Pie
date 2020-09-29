@@ -14,6 +14,9 @@
 		4386DEA524DB369B00AF4679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4386DEA424DB369B00AF4679 /* Assets.xcassets */; };
 		4386DEA824DB369B00AF4679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4386DEA624DB369B00AF4679 /* LaunchScreen.storyboard */; };
 		43CBC5DE24DFB90C00F9C454 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CBC5DD24DFB90C00F9C454 /* Colors.swift */; };
+		43CBC5E124E1D33A00F9C454 /* ArcadiaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CBC5DF24E1D33A00F9C454 /* ArcadiaCell.swift */; };
+		43CBC5E224E1D33A00F9C454 /* ArcadiaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43CBC5E024E1D33A00F9C454 /* ArcadiaCell.xib */; };
+		43CBC5E424E1DB7400F9C454 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CBC5E324E1DB7400F9C454 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		4386DEA724DB369B00AF4679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4386DEA924DB369B00AF4679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43CBC5DD24DFB90C00F9C454 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		43CBC5DF24E1D33A00F9C454 /* ArcadiaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadiaCell.swift; sourceTree = "<group>"; };
+		43CBC5E024E1D33A00F9C454 /* ArcadiaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArcadiaCell.xib; sourceTree = "<group>"; };
+		43CBC5E324E1DB7400F9C454 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,8 @@
 			children = (
 				4386DEA124DB369A00AF4679 /* Main.storyboard */,
 				4386DE9F24DB369A00AF4679 /* MainViewController.swift */,
+				43CBC5E024E1D33A00F9C454 /* ArcadiaCell.xib */,
+				43CBC5DF24E1D33A00F9C454 /* ArcadiaCell.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -98,6 +106,7 @@
 		43CBC5DB24DCA8B400F9C454 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				43CBC5E324E1DB7400F9C454 /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4386DEA824DB369B00AF4679 /* LaunchScreen.storyboard in Resources */,
+				43CBC5E224E1D33A00F9C454 /* ArcadiaCell.xib in Resources */,
 				4386DEA524DB369B00AF4679 /* Assets.xcassets in Resources */,
 				4386DEA324DB369A00AF4679 /* Main.storyboard in Resources */,
 			);
@@ -194,10 +204,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43CBC5E124E1D33A00F9C454 /* ArcadiaCell.swift in Sources */,
 				4386DEA024DB369A00AF4679 /* MainViewController.swift in Sources */,
 				43CBC5DE24DFB90C00F9C454 /* Colors.swift in Sources */,
 				4386DE9C24DB369A00AF4679 /* AppDelegate.swift in Sources */,
 				4386DE9E24DB369A00AF4679 /* SceneDelegate.swift in Sources */,
+				43CBC5E424E1DB7400F9C454 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
